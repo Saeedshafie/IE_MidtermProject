@@ -1,0 +1,122 @@
+/* importing the font */
+@font-face {
+   font-family: "nonito";
+   src: url(../utils/fonts/Nunito-Regular.ttf);
+}
+
+/* make some defult styles */
+* {
+   margin: 0;
+   padding: 0;
+   font-family: "nonito";
+   font-size: 20px;
+   font-weight: 600;
+}
+
+/* full width for page  */
+.container {
+   background-color: #f8f4ea;
+   height: 100vh;
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/* placing the wrapper */
+.wrapper {
+   width: 80%;
+   height: 80%;
+   border-radius: 5px;
+   display: flex;
+   gap: 15px;
+   padding: 15px;
+}
+
+/* information section structour using flexbox */
+.left {
+   flex: 0 0 auto;
+   width: 66.66666667%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 100px;
+   border: 1px solid black;
+   border-radius: 15px;
+   background-color: #ece8dd;
+}
+
+.left-describtion {
+   display: flex;
+   gap: 10px;
+}
+
+.image {
+   max-width: 150px;
+   height: 150px;
+   border: 1px solid rgba(128, 128, 128, 0.5);
+   border-radius: 5px;
+}
+
+.left-infos {
+   display: flex;
+   flex-direction: column;
+   width: fit-content;
+   align-items: center;
+   justify-content: center;
+   gap: 40px;
+}
+
+.left-bio {
+   padding: 15px;
+   color: #05517a;
+}
+
+.right {
+   flex: 0 0 auto;
+   width: 33.33333333%;
+   display: flex;
+   flex-direction: column;
+   gap: 50px;
+   align-items: center;
+   justify-content: center;
+   border: 1px solid black;
+   border-radius: 15px;
+   background-color: #ece8dd;
+   padding: 15px;
+}
+
+.alert {
+   font-size: 16px;
+   background-color: #f8d7da;
+   border: 1px solid #f5c2c7;
+   padding: 15px;
+   border-radius: 5px;
+   visibility: hidden;
+}
+
+/* search section structour using flexbox */
+.form {
+   display: flex;
+   flex-direction: column;
+   gap: 50px;
+}
+
+.input {
+   height: 40px;
+   padding: 0 10px;
+}
+
+.btn {
+   height: 40px;
+   cursor: pointer;
+}
+
+/* making the image responsive using media query */
+@media (min-width: 1200px) {
+   .image {
+      max-width: 300px;
+      height: 300px;
+   }
+}
